@@ -1,0 +1,398 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+nav {
+    background-color: #ff6fa9;
+    position: fixed; /* Hace que la navbar sea fija */
+    top: 0; /* Fija la navbar en la parte superior */
+    width: 100%; /* Hace que la navbar ocupe todo el ancho */
+    z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    padding: 15px 8px;
+}
+
+nav ul li {
+    margin: 0 2%;
+}
+
+nav ul li a {
+    color: #ffc6cd;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: #005f81;
+}
+
+/* Estilos específicos del contenedor de la navegación de la página de inicio */
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    background-color: #ff6fa9;
+}
+
+/* Estilo íconos de inicio */
+.iconos {
+    display: block;
+    margin: auto; 
+    padding: 10px;
+}
+
+/* Estilo de la imagen centrada */
+.centrado {
+    display: block;
+    margin: auto; 
+    padding: 35px;
+}
+
+/* Estilo específico para el logo */
+img .centrado .logogrande {
+    width: 800px; 
+    height: auto;
+}
+
+/* Estilos para el contenido principal de la página de inicio */
+.contenedor2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    text-align: center;
+    font-size: medium;
+    gap: 20px;
+    padding:40px;
+}
+
+.elemento2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: #FFD0CC;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    border-radius: 8px;
+    padding: 3%;
+    text-decoration: none;
+    transition: background-color 1s;
+}
+
+/* Estilo para los íconos */
+.elemento2 img {
+    width: 50px; 
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para títulos */
+h1 {
+    color: #005f81;
+    text-align: center;
+    font-size: larger;
+    margin-top: 5%;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: larger;
+    background-size: 300px;
+}
+
+/* Estilos específicos para la página de Contacto */
+.container-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 5%;
+    gap: 20px;
+}
+
+.logo-pequeno {
+    width: 300px;  /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    display: block;
+    margin: 7% auto;  /* Centra la imagen y agrega margen inferior */
+}
+
+.formulario-contacto {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.formulario-contacto h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #005f81;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-contacto form input, 
+.formulario-contacto form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #00b7cc;
+    border-radius: 5px;
+}
+
+.formulario-contacto form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formulario-contacto form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff6fa9;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario-contacto form button:hover {
+    background-color: #ffc6cd;
+    color: #ff6fa9;
+}
+
+.mapa-contacto {
+    flex: 1;
+    padding: 20px;
+}
+
+.mapa-contacto iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Estilos específicos para la página de "Nosotras" */
+.nosotras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100vh;  
+    width: 80%;
+    margin: 3% auto;         
+}
+
+.intro {
+    text-align: center;
+    margin: 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+.equipo {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.miembro {
+    flex: 1;
+    max-width: 45%;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f8d4d4;
+    border-radius: 8px;
+}
+
+.foto-circular {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.mision-vision {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.mision, .vision {
+    margin: 20px 0;
+}
+
+.mision h2, .vision h2 {
+    color: #005f81;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.mision p, .vision p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Estilos para el formulario de registro */
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.registro {
+    width: 40%;
+    background-color: #ffffff;
+    padding: 10px 50px;
+    box-sizing: border-box;
+}
+
+.slogan {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.registro form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registro form label {
+    margin-bottom: 5px;
+}
+
+.registro form input {
+    margin-bottom: 7px;
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid #00b7cc;
+    border-radius: 5px;
+}
+
+.registro form .terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.registro form .terms input {
+    margin-right: 10px;
+}
+
+.registro form .terms a {
+    color: #00b7cc;
+    padding-top: 10px ;
+}
+
+.registro form button {
+    padding: 10px;
+    font-size: 16px;
+    width: 50%;
+    margin: 10px auto;
+    background-color: #ff6fa9;
+    color: #ffc6cd;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.registro form button:hover {
+    background-color: #ffc6cd;
+    color: #ff6fa9;
+}
+
+.registro p {
+    text-align: center;
+}
+
+.registro p a {
+    color: #00b7cc;
+}
+
+.mediaimagen {
+    width: 60%;
+    background: url('../images/fondo2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Estilos para iniciar sesión */
+
+.iniciarsesion {
+    width: 40%;
+    background-color: #ffffff;
+    margin: 7% 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #005f81;
+    color: #F2F2F2;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer .icons img {
+    width: 30px; /* Tamaño de los íconos */
+    height: 30px; /* Tamaño de los íconos */
+    margin: 5px 10px;
+    transition: transform 0.3s;
+}
+
+footer .icons img:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: small;
+}
