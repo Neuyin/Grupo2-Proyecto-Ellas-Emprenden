@@ -15,12 +15,13 @@ body {
     background-color: #ffffff;
 }
 
+/* Estilos para la navegación */
 nav {
     background-color: #ff6fa9;
-    position: fixed; /* Hace que la navbar sea fija */
-    top: 0; /* Fija la navbar en la parte superior */
-    width: 100%; /* Hace que la navbar ocupe todo el ancho */
-    z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
@@ -43,6 +44,26 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #005f81;
+}
+
+/* Estilos para el menú hamburguesa */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 15px 20px;
+}
+
+.menu-icon .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #ffc6cd;
+    margin: 4px 0;
+    transition: 0.4s;
 }
 
 /* Estilos específicos del contenedor de la navegación de la página de inicio */
@@ -395,4 +416,22 @@ footer .icons img:hover {
 footer p {
     margin-top: 10px;
     font-size: small;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-list {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
 }
