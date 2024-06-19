@@ -418,20 +418,100 @@ footer p {
     font-size: small;
 }
 
-/* Estilos responsivos */
+/* Media queries para diferentes tamaños de pantalla */
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 1024px) {
+    .contenedor2 {
+        flex-direction: column;
+    }
+
+    .contenedor2 .elemento2 {
+        max-width: none;
+    }
+
+    .formulario-contacto, .registro, .iniciarsesion, .mision, .vision, .miembro {
+        max-width: 90%;
+    }
+
+    .formulario-contacto, .registro, .iniciarsesion, .nosotras, .contacto {
+        padding-top: 80px; /* Añadir relleno superior para evitar que el contenido quede oculto por la navbar */
+    }
+}
+
 @media (max-width: 768px) {
     nav ul {
         display: none;
         flex-direction: column;
+        background-color: #ff6fa9;
         width: 100%;
-        text-align: center;
-    }
-
-    #menu-toggle:checked + .menu-icon + .nav-list {
-        display: flex;
     }
 
     .menu-icon {
         display: flex;
+    }
+
+    nav input:checked ~ ul {
+        display: flex;
+    }
+
+    .mision-vision, .equipo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mision, .vision, .miembro {
+        max-width: 100%;
+    }
+
+    h1 {
+        padding-top: 80px; /* Añadir relleno superior para evitar que el contenido quede oculto por la navbar */
+    }
+
+    .mediaimagen {
+        display: none; /* Ocultar imagen de fondo en registro e iniciar sesión */
+    }
+}
+
+@media (max-width: 480px) {
+    .centrado {
+        padding: 20px;
+        text-align: center; /* Asegurar que el texto esté centrado */
+    }
+
+    .centrado img {
+        width: 80%; /* Ajustar el tamaño del logo para dispositivos móviles */
+    }
+
+    .contenedor2 {
+        padding: 20px;
+    }
+
+    .elemento2 {
+        padding: 10px;
+        font-size: small;
+    }
+
+    h {
+        padding-top: 80px; /* Añadir relleno superior para evitar que el contenido quede oculto por la navbar */
+    }
+
+    .mision, .vision, .miembro {
+        padding: 10px;
+    }
+
+    .mediaimagen {
+        display: none; /* Ocultar imagen de fondo en registro e iniciar sesión */
+    }
+
+    .container-contacto {
+        flex-direction: column;
+    }
+
+    .mapa-contacto {
+        order: 2; /* Mover el iframe del mapa debajo del formulario */
+    }
+
+    .formulario-contacto {
+        order: 1;
     }
 }
