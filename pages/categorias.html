@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorías: Ellas Emprenden</title>
     <link rel="icon" href="../images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,24 +31,106 @@
     </header>
     <main>
         <h1>Categorías</h1>
-        <section class="contenedor2">
-            <p class="elemento2">
-                <img src="../images/icono_comunidad.png" class="iconos" alt="Icono de comunidad">
-                Comunidad
-            </p>
-            <p class="elemento2">
-                <img src="../images/icono_inspiracion.png" class="iconos" alt="Icono de inspiración">
-                Inspiración
-            </p>
-            <p class="elemento2">
-                <img src="../images/icono_mujeres.png" class="iconos" alt="Icono de mujeres">
-                Mujeres Emprendedoras
-            </p>
-            <p class="elemento2">
-                <img src="../images/icono_confianza.png" class="iconos" alt="Icono de confianza">
-                Confianza
-            </p>
-        </section>
+        <!--Carousel con Bootstrap-->
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <!--Slide 1-->
+                <div class="carousel-item active">
+                <div class="cards-wrapper">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/imagenes/Comunicacion.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver comunicación</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="/imagenes/Construccion.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver construcción</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="/imagenes/Mascotas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver mascotas</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!--Slide 2-->
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/imagenes/Diseño.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card 4</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Ver diseño</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="/imagenes/enfermeria.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card 5</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Ver enfermeria</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="/imagenes/herramientas-limpieza.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card 6</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Ver limpieza</a>
+                        </div>
+                      </div>
+                </div>
+              </div>
+              <!--Slide 3-->
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/imagenes/Infancia.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card 7</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Ver infancia</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="/imagenes/Limpieza.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card 8</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Ver limpieza</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="/imagenes/Mascotas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card 9</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Ver mascotas</a>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
     <footer>
         <div class="icons">
@@ -57,5 +140,6 @@
         </div>
         <p>&copy; 2024 Ellas Emprenden. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

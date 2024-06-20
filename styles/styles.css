@@ -149,6 +149,58 @@ h2 {
     background-size: 300px;
 }
 
+/* Modificación a Boostrap*/
+/* Estilos para el contenedor de las cards */
+.cards-wrapper {
+    display: flex; /* Utilizamos flexbox para alinear las cards en una fila */
+    justify-content: center; /* Distribuye el espacio entre las cards */
+    flex-wrap: wrap; /* Permite que las cards se ajusten al ancho del contenedor */
+    margin: 50px; /* Margen negativo para compensar el padding de las cards individuales */
+}
+
+/* Estilos para cada card individual */
+.card {
+    width: calc(33.33% -20px); /* Calcula el ancho de cada card (33.33% del contenedor menos el margen) */
+    margin: 20px; /* Margen entre las cards */
+    max-width: 300px; /* Ancho máximo de cada card */
+}
+
+/* Ajuste de estilos para imágenes dentro de las cards */
+.card-img-top {
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+}
+
+/* Estilos adicionales según sea necesario */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #ff6fa9; /* Color de fondo para los botones */
+    color: #fff; /* Color del texto */
+    border-radius: 50%; /* Borde redondeado */
+    width: 40px; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+    font-size: 30px; /* Tamaño del ícono */
+    line-height: 50px; /* Ajuste de la línea de texto */
+    text-align: center; /* Alineación del texto */
+    opacity: 0.6; /* Opacidad del botón */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* Coloca el botón en el centro verticalmente */
+    transform: translateY(-50%); /* Ajusta el centrado vertical */
+}
+
+.carousel-control-prev {
+    left: 10%; /* Coloca el botón Prev cerca del borde izquierdo */
+}
+
+.carousel-control-next {
+    right: 10%; /* Coloca el botón Next cerca del borde derecho */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1; /* Aumenta la opacidad al pasar el cursor */
+}
+
 /* Estilos específicos para la página de Contacto */
 .container-contacto {
     display: flex;
