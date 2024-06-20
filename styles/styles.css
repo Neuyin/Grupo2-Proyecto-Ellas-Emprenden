@@ -149,56 +149,62 @@ h2 {
     background-size: 300px;
 }
 
-/* Modificación a Boostrap*/
-/* Estilos para el contenedor de las cards */
+/* Estilos para página de categorias. Estilos para el contenedor de las cards. Modificación a Boostrap */
+nav.categorias-nav ul {
+    padding: 10px 5px 0; /* Ajustar esto para que coincida con las otras páginas */
+}
+
 .cards-wrapper {
-    display: flex; /* Utilizamos flexbox para alinear las cards en una fila */
-    justify-content: center; /* Distribuye el espacio entre las cards */
-    flex-wrap: wrap; /* Permite que las cards se ajusten al ancho del contenedor */
-    margin: 50px; /* Margen negativo para compensar el padding de las cards individuales */
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin: 50px; 
 }
 
 /* Estilos para cada card individual */
 .card {
-    width: calc(33.33% -20px); /* Calcula el ancho de cada card (33.33% del contenedor menos el margen) */
-    margin: 20px; /* Margen entre las cards */
-    max-width: 300px; /* Ancho máximo de cada card */
+    width: calc(33.33% -20px); 
+    margin: 20px; 
+    max-width: 300px; 
+    background-color: #f8d4d4;
+    box-shadow: 0 4px 8px rgba(255, 111, 169, 0.9);
+    text-align: center;
 }
 
 /* Ajuste de estilos para imágenes dentro de las cards */
 .card-img-top {
-    height: 200px; /* Altura fija para las imágenes */
-    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    height: 200px; 
+    object-fit: cover; 
 }
 
 /* Estilos adicionales según sea necesario */
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: #ff6fa9; /* Color de fondo para los botones */
-    color: #fff; /* Color del texto */
-    border-radius: 50%; /* Borde redondeado */
-    width: 40px; /* Ancho del botón */
-    height: 40px; /* Altura del botón */
-    font-size: 30px; /* Tamaño del ícono */
-    line-height: 50px; /* Ajuste de la línea de texto */
-    text-align: center; /* Alineación del texto */
-    opacity: 0.6; /* Opacidad del botón */
-    position: absolute; /* Posicionamiento absoluto */
-    top: 50%; /* Coloca el botón en el centro verticalmente */
+    background-color: #ff6fa9; 
+    color: #ffffff; 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    font-size: 30px; 
+    line-height: 50px; 
+    text-align: center; 
+    opacity: 0.6; 
+    position: absolute; 
+    top: 50%; 
     transform: translateY(-50%); /* Ajusta el centrado vertical */
 }
 
 .carousel-control-prev {
-    left: 10%; /* Coloca el botón Prev cerca del borde izquierdo */
+    left: 10%; 
 }
 
 .carousel-control-next {
-    right: 10%; /* Coloca el botón Next cerca del borde derecho */
+    right: 10%; 
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    opacity: 1; /* Aumenta la opacidad al pasar el cursor */
+    opacity: 1; 
 }
 
 /* Estilos específicos para la página de Contacto */
@@ -254,19 +260,26 @@ h2 {
     min-height: 100px;
 }
 
-.formulario-contacto form button {
+.formulario-contacto form button, .btn {
     padding: 10px;
     font-size: 16px;
+    width: 40%;
+    margin: 10px auto;
     background-color: #ff6fa9;
-    color: #ffffff;
+    color: #ffc6cd;
     font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.5s;
 }
 
 .formulario-contacto form button:hover {
+    background-color: #ffc6cd;
+    color: #ff6fa9;
+}
+
+.btn:hover {
     background-color: #ffc6cd;
     color: #ff6fa9;
 }
@@ -406,7 +419,7 @@ h2 {
 .registro form button {
     padding: 10px;
     font-size: 16px;
-    width: 50%;
+    width: 40%;
     margin: 10px auto;
     background-color: #ff6fa9;
     color: #ffc6cd;
@@ -565,6 +578,20 @@ footer p {
     .iniciarsesion form {
         margin-top: 20px; /* Espacio arriba del formulario */
     }
+
+    /* Estilos para las categorías en dispositivos móviles */
+    .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0; /* Eliminar márgenes alrededor del contenedor */
+    }
+
+    .card {
+        width: 80%;
+        max-width: none;
+        margin: 20px 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -646,5 +673,19 @@ footer p {
     .registro form,
     .iniciarsesion form {
         margin-top: 20px; /* Espacio arriba del formulario */
+    }
+
+    /* Estilos para las categorías en dispositivos móviles */
+    .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0; /* Eliminar márgenes alrededor del contenedor */
+    }
+
+    .card {
+        width: 80%;
+        max-width: none;
+        margin: 20px 0;
     }
 }
