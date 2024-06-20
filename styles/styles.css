@@ -253,20 +253,20 @@ h2 {
 
 .equipo {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-bottom: 20px; 
 }
 
 .miembro {
-    flex: 1 1 100%; /* Ajuste para que ocupe el 100% del ancho en pantallas pequeñas */
-    max-width: 100%;
+    flex: 1 1 calc(50% - 40px); /* Dos tarjetas por fila con espacio entre ellas */
+    max-width: calc(50% - 40px);
     text-align: center;
     margin: 10px;
-    padding: 10px;
+    padding: 50px;
     background-color: #f8d4d4;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 111, 169, 0.9);
 }
 
 .mision-vision {
