@@ -1,10 +1,10 @@
-// Leer y mostrar categorías desde el archivo JSON
+/* // Leer y mostrar categorías desde el archivo JSON
 fetch('../data/categorias.json')
     .then(response => response.json())
     .then(data => {
         mostrarCategorias(data);
     })
-    .catch(error => console.error('Error al cargar el archivo JSON:', error));
+    .catch(error => console.error('Error al cargar el archivo JSON:', error)); */
 
 function mostrarCategorias(categorias) {
     const container = document.querySelector('.carousel-inner');
@@ -53,7 +53,7 @@ agregarCategoria(nuevaCategoria);
 //Almacenar en Storage
 function guardarUsuario(nombreUsuario) {
     localStorage.setItem('usuario', nombreUsuario);
-    alert('Usuario guardado en localStorage.');
+    //alert('Usuario guardado en localStorage.');
 }
 guardarUsuario('Emprendedora123'); //Ejemplo
 
