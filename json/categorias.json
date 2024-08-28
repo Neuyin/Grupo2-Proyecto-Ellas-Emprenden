@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Artesanías y manualidades",
+    "descripcion": "Incluye artículos hechos a mano como joyería, decoración del hogar, textiles, etc.",
+    "imagen": "../images/artesania.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Alimentación y gastronomía",
+    "descripcion": "Incluye servicios de catering, repostería, comida saludable, productos gourmet, etc.",
+    "imagen": "../images/alimentacion.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Servicios profesionales",
+    "descripcion": "Incluye consultoría en áreas como negocios, marketing, finanzas, recursos humanos, etc.",
+    "imagen": "../images/profesionales.jpg"
+  }
+]
