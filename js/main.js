@@ -24,11 +24,43 @@ window.onload = function() {
             return true;
         };
     }
+
+    // Validación de formulario de registro
+    if (registerForm) {
+        registerForm.onsubmit = function() {
+            // Llamamos a la función de validación
+            return validarFormularioRegistro();
+        };
+    }
+
+    // Función útil para este proyecto: validar los datos
+    function validarFormularioRegistro() {
+        let nombre = document.getElementById("nombre").value.trim();
+        let apellido = document.getElementById("apellido").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let password = document.getElementById("password").value.trim();
+        let confirmPassword = document.getElementById("confirm-password").value.trim();
+        let terms = document.getElementById("terms").checked;
+
+        // Validar que los campos no estén vacíos
+        if (!nombre || !apellido || !email || !password || !confirmPassword) {
+            alert("Por favor, completa todos los campos.");
+            return false;
+        }
+
+        // Validar que las contraseñas coincidan
+        if (password !== confirmPassword) {
+            alert("Las contraseñas no coinciden. Por favor, verifica e intenta de nuevo.");
+            return false;
+        }
+
+        // Validar que se acepten los términos y condiciones
+        if (!terms) {
+            alert("Debes aceptar los términos y condiciones para registrarte.");
+            return false;
+        }
+
+        alert("Registro exitoso. ¡Bienvenida a la plataforma!");
+        return true;
+    }
 };
-
-
-//PROMPT: entrada de datos
-//let nombreIngresado = prompt("Ingrese su nombre");
-//console.log(nombreIngresado);
-
-//Template literals ´${}´
