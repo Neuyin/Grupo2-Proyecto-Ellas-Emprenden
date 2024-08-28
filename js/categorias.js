@@ -26,6 +26,35 @@ function mostrarCategorias(categorias) {
             </div>
         `;
     });
-
     container.innerHTML = slides;
 }
+
+//Agregar un nuevo elemento a la base de datos
+function agregarCategoria(nuevaCategoria) {
+    fetch('../data/categorias.json')
+        .then(response => response.json())
+        .then(categorias => {
+            categorias.push(nuevaCategoria);
+            console.log('Categoría agregada:', nuevaCategoria);
+            // Aquí se podría enviar la nueva lista de categorías a un backend para guardarla en el archivo JSON
+        })
+        .catch(error => console.error('Error al cargar el archivo JSON:', error));
+}
+
+// Ejemplo de uso
+const nuevaCategoria = {
+    id: 4,
+    nombre: "Educación y tutoría",
+    descripcion: "Incluye servicios de tutoría académica, clases particulares, cursos online, etc.",
+    imagen: "../images/educacion.jpg"
+};
+agregarCategoria(nuevaCategoria);
+
+//Almacenar en Storage
+function guardarUsuario(nombreUsuario) {
+    localStorage.setItem('usuario', nombreUsuario);
+    alert('Usuario guardado en localStorage.');
+}
+guardarUsuario('Emprendedora123'); //Ejemplo
+
+//Mostrar la información en la web: La función mostrarCategorias ya se encarga de mostrar las categorías en la web.
